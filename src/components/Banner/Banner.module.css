@@ -1,0 +1,19 @@
+.banner {
+	background-color: var(--c-accent-soft);
+	padding: var(--s-2);
+	display: flex;
+	align-items: flex-start;
+	font-size: var(--fs-0);
+	gap: var(--s-1);
+}
+
+.banner svg {
+	margin-top: 0.12em;
+	flex-shrink: 0;
+	width: 13px;
+	color: var(--c-accent);
+}
+
+.banner .text {
+	margin: 0;
+}
