@@ -1,0 +1,29 @@
+.header {
+	grid-column: 1/-1;
+	padding: var(--s-3) var(--s-4);
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--c-border);
+}
+
+.logo {
+	height: 32px;
+	width: auto;
+}
+
+.profileButton {
+	display: flex;
+	align-items: center;
+	gap: var(--s-2);
+	padding: var(--s-1) var(--s-3);
+	background-color: var(--c-bg);
+	border-radius: var(--r-md);
+	border-width: 1.5px;
+	font-size: var(--fs-0);
+	font-weight: 600;
+}
+
+.profileButton svg {
+	width: 20px;
+	background-color: var(--c-bg);
+}
