@@ -34,6 +34,8 @@
 		flex-direction: column;
 		padding: 24px 16px;
 		gap: var(--s-1);
+		border-top: none;
+		border-right: 1px solid var(--c-border);
 	}
 
 	.item {
