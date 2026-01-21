@@ -63,3 +63,22 @@ a {
 #root {
 	height: 100%;
 }
+
+/* Scroll Bar Modern browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	background: none;
+}
+
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--c-border);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--c-muted);
+}
