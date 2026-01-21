@@ -2,10 +2,12 @@
 	/* Colors */
 	--c-primary: #1b263b;
 	--c-accent: #2b6ff7;
+	--c-accent-soft: #e3ebff;
 	--c-bg: #f7f7f5;
 	--c-surface: #ffffff;
 	--c-border: #e4e7ec;
 	--c-text: #101828;
+	--c-gray: #f8f9fa;
 	--c-muted: #667085;
 	--c-success: #1a7f37;
 	--c-danger: #d92d20;
