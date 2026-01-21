@@ -1,0 +1,98 @@
+.page {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.page > :last-child {
+	flex: 1;
+}
+
+.toolbar {
+	display: flex;
+	justify-content: space-between;
+	margin: var(--s-3) var(--s-3) 0 var(--s-3);
+	background-color: var(--c-surface);
+	padding: var(--s-3) var(--s-3);
+	border: 1px solid var(--c-border);
+	border-radius: var(--r-sm);
+	font-size: var(--fs-0);
+	font-weight: 600;
+}
+
+.toolbarLeft {
+	display: flex;
+	align-items: center;
+	gap: var(--s-2);
+}
+
+.dateRange {
+	border: 1px solid var(--c-border);
+	border-radius: var(--r-md);
+	padding: 3px 0 3px 6px;
+	text-align: center;
+}
+
+.toggleButtons > :first-child {
+	border-right: none;
+	border-top-left-radius: var(--r-sm);
+	border-bottom-left-radius: var(--r-sm);
+}
+
+.toggleButtons > :last-child {
+	border-top-right-radius: var(--r-sm);
+	border-bottom-right-radius: var(--r-sm);
+}
+
+.toggleButton {
+	background-color: var(--c-surface);
+	padding: 3px 15px;
+	border: 1px solid var(--c-border);
+	transition: color 0.3s ease;
+}
+
+.toggleButton.active {
+	color: #fff;
+	background-color: var(--c-primary);
+}
+
+.toolbarRight {
+	position: relative;
+}
+
+.rescheduleButton {
+	display: flex;
+	gap: var(--s-1);
+	padding: 4px 14px;
+	background-color: var(--c-surface);
+	border-radius: 6px;
+	border: 1px solid var(--c-border);
+	color: var(--c-accent);
+}
+
+.rescheduleButton svg {
+	width: 13px;
+}
+
+.nokoriLabel {
+	position: absolute;
+	font-size: 0.5rem;
+	font-weight: 600;
+	background-color: var(--c-accent);
+	color: #fff;
+	border-radius: var(--r-md);
+	padding: 2px 5px;
+	top: -8px;
+	right: -10px;
+}
+
+@media (min-width: 768px) {
+	.page {
+		/* padding: var(--s-4) 0 0 0; */
+	}
+
+	.toolbar {
+		font-size: var(--fs-1);
+	}
+}
