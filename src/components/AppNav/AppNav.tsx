@@ -1,9 +1,7 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./AppNav.module.css";
 
 function AppNav() {
-	const [active, setActive] = useState(false);
 	return (
 		<nav className={styles.navbar}>
 			<NavLink
@@ -44,7 +42,7 @@ function AppNav() {
 					<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
 					<polyline points="22 4 12 14.01 9 11.01"></polyline>
 				</svg>
-				<span className={styles.label}>進捗管理</span>
+				<span className={styles.label}>進捗</span>
 			</NavLink>
 			<NavLink
 				to="#"

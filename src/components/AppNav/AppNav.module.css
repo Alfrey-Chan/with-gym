@@ -6,6 +6,8 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	border-top: 1px solid var(--c-border);
+	background-color: var(--c-surface);
+	z-index: 6;
 }
 
 .item {
