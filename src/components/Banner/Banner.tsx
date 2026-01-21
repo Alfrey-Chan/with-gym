@@ -9,15 +9,15 @@ function Banner() {
 					cy="12"
 					r="9"
 					stroke="currentColor"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="1.75"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					strokeWidth="1.75"
 				/>
 				<rect
 					height="0.01"
 					stroke="currentColor"
-					stroke-linejoin="round"
-					stroke-width="2.5"
+					strokeLinejoin="round"
+					strokeWidth="2.5"
 					width="0.01"
 					x="12"
 					y="16"
@@ -25,9 +25,9 @@ function Banner() {
 				<path
 					d="M12 12L12 8"
 					stroke="currentColor"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					strokeWidth="2"
 				/>
 			</svg>
 			<p className={styles.text}>
