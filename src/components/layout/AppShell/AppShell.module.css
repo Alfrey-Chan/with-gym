@@ -1,5 +1,24 @@
 .shell {
 	display: grid;
-	grid-template-columns: 160px 1fr;
-	min-height: 100vh;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+	.main {
+		padding-bottom: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.shell {
+		grid-template-columns: 160px 1fr;
+	}
 }
