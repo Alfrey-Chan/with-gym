@@ -1,5 +1,5 @@
 import styles from "./CalendarWeek.module.css";
-import type { CalendarEvent } from "../../../types/calendarEvent";
+import type { CalendarEvent } from "../../../types/calendar";
 import CalendarEventBlock from "../CalendarEventBlock/CalendarEventBlock";
 import { Fragment } from "react/jsx-runtime";
 
@@ -60,7 +60,7 @@ function CalendarWeek({
 						dayIndex={event.dayIndex}
 						label={event.label}
 						subLabel={event.subLabel}
-                        ageGroup={event.ageGroup}
+						ageGroup={event.ageGroup}
 						isConfirmed={event.isConfirmed}
 						calendarStartHour={startHour}
 						rowHeightPx={80}
