@@ -1,0 +1,107 @@
+.card {
+	display: grid;
+	font-size: var(--fs-3);
+	border-radius: var(--r-sm);
+}
+
+.card.completed {
+	border: 1px solid var(--c-success);
+	color: var(--c-success);
+	background-color: #ecfdf3;
+}
+
+.card.in_progress {
+	border: 1px solid var(--c-accent);
+	color: var(--c-accent);
+	background-color: var(--c-accent-soft);
+	box-shadow: 0 0 0 4px var(--c-accent-soft);
+}
+
+.card.not_started {
+	border: 1px solid var(--c-border);
+	opacity: 0.5;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 var(--s-4);
+	border-bottom: 1px solid var(--c-border);
+	font-weight: 600;
+}
+
+.level {
+	font-size: 1.325rem;
+	font-weight: 800;
+	margin: var(--s-4) 0;
+}
+
+.statusLabel {
+	font-size: var(--fs-0);
+	color: #fff;
+	padding: var(--s-1) var(--s-2);
+	border-radius: 4px;
+}
+
+.completed .statusLabel {
+	background-color: var(--c-success);
+}
+
+.in_progress .statusLabel {
+	background-color: var(--c-accent);
+}
+
+.main {
+	background-color: var(--c-surface);
+	border-bottom-left-radius: var(--r-sm);
+	border-bottom-right-radius: var(--r-sm);
+	padding-left: var(--s-4);
+}
+
+.levelTitle {
+	font-weight: 700;
+	color: var(--c-text);
+}
+
+.skillsList {
+	color: var(--c-text);
+	list-style: none;
+	padding-left: 0;
+}
+
+.skillItem {
+	display: flex;
+	align-items: center;
+	gap: var(--s-2);
+}
+
+.skillCheck {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 2px solid var(--c-border);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.skillPassed {
+	color: var(--c-muted);
+	text-decoration: line-through;
+}
+
+.skillPassed .skillCheck {
+	background-color: var(--c-success);
+	border-color: var(--c-success);
+}
+
+.skillPassed .skillCheck::after {
+	content: "";
+	width: 5px;
+	height: 9px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	margin-bottom: 2px;
+}
