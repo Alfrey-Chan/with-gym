@@ -1,13 +1,5 @@
 import styles from "./CalendarEventBlock.module.css";
-
-type ClassCategory =
-	| "examPrep"
-	| "toddler"
-	| "toddlerElementary"
-	| "preschool"
-	| "elementary"
-	| "elementaryMiddle"
-	| "acrobat";
+import { type ClassCategory } from "../../../types/calendar";
 
 type CalendarEventBlockProps = {
 	category: ClassCategory;
@@ -26,10 +18,13 @@ type CalendarEventBlockProps = {
 };
 
 function parseTimeToMinutes(time: string): number {
-	const [hStr, mStr] = time.split(":");
-	const h = Number(hStr);
-	const m = Number(mStr ?? "0");
-	return (Number.isFinite(h) ? h : 0) * 60 + (Number.isFinite(m) ? m : 0);
+	const [hourString, minuteString
+
+	] = time.split(":");
+	const hours = Number(hourString);
+	const minutes = Number(minuteString
+		 ?? "0");
+	return (Number.isFinite(hours) ? hours : 0) * 60 + (Number.isFinite(minutes) ? minutes : 0);
 }
 
 function CalendarEventBlock({

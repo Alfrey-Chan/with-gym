@@ -1,7 +1,7 @@
 import styles from "./CalendarPage.module.css";
 import Banner from "../../components/Banner/Banner";
 import CalendarWeek from "../../components/calendar/CalendarWeek/CalendarWeek";
-import type { CalendarEvent } from "../../types/calendarEvent";
+import type { CalendarEvent } from "../../types/calendar";
 import { useState } from "react";
 
 const sampleEvents: CalendarEvent[] = [
