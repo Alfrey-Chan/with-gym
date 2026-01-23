@@ -1,0 +1,166 @@
+.profileMenu {
+	margin-bottom: var(--s-1);
+}
+
+.defaultView {
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr;
+	align-items: center;
+
+	font-size: var(--fs-1);
+	font-weight: 600;
+
+	gap: var(--s-3);
+	padding: var(--s-2);
+
+	border: 1px solid var(--c-border);
+	border-radius: var(--r-md);
+
+	background-color: var(--c-surface);
+}
+
+.avatarCircle {
+	display: grid;
+	place-items: center;
+
+	background-color: var(--c-accent-soft);
+	color: var(--c-accent);
+
+	width: 33px;
+	height: 33px;
+
+	border: 1px solid var(--c-border);
+	border-radius: 50%;
+}
+
+.nameLocation {
+	display: grid;
+	gap: 0.1rem;
+}
+
+.nameHiragana {
+}
+
+.location {
+	color: var(--c-muted);
+	font-size: var(--fs-0);
+	font-weight: 400;
+}
+
+.chevronIcon {
+	cursor: pointer;
+	justify-self: end;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px 3px;
+}
+
+.chevronIcon::after {
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-right: 1.25px solid var(--c-muted);
+	border-bottom: 1.25px solid var(--c-muted);
+	transform: rotate(45deg);
+	transition: transform 0.2s ease;
+}
+
+.chevronIcon.show::after {
+	transform: rotate(-135deg);
+}
+
+/* Expanded view */
+.expandedView {
+	display: grid;
+	gap: var(--s-2);
+	padding: var(--s-2);
+	margin-top: var(--s-2);
+
+	font-size: var(--fs-1);
+	font-weight: 600;
+
+	background-color: var(--c-surface);
+	border: 1px solid var(--c-border);
+	border-radius: var(--r-sm);
+}
+
+.expandedView:nth-of-type(2) {
+	padding-bottom: var(--s-2);
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	gap: var(--s-2);
+	padding: var(--s-2) var(--s-1);
+	border-bottom: 1px solid var(--c-border);
+}
+
+.header svg {
+	width: 28px;
+}
+
+.subheading {
+	color: var(--c-muted);
+	font-size: var(--fs-0);
+}
+
+.accountsList {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 10px 0;
+
+	display: grid;
+	gap: var(--s-1);
+
+	border-bottom: 1px solid var(--c-border);
+}
+
+.accountItem {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+
+	padding: var(--s-2);
+	background-color: var(--c-bg);
+	border: 1px solid var(--c-border);
+	border-radius: var(--r-sm);
+}
+
+.switchAccountButton {
+	justify-self: end;
+	align-self: center;
+	font-size: var(--fs-0);
+	font-weight: 800;
+	background-color: var(--c-accent-soft);
+	color: var(--c-accent);
+	border: 1px solid var(--c-accent);
+	border-radius: var(--r-sm);
+	width: 44px;
+	height: 24px;
+}
+
+.switchAccountButton:disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+.logout {
+	display: flex;
+	align-items: center;
+	background: none;
+	border: none;
+	padding: var(--s-2);
+	transition: color 0.3s ease;
+}
+
+.logout:hover {
+	border-radius: var(--r-sm);
+	background-color: var(--c-accent-soft);
+	color: var(--c-accent);
+}
+
+.logout svg {
+	margin-right: var(--s-3);
+	width: 18px;
+}
