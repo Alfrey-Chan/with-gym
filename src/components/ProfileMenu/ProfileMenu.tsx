@@ -83,8 +83,6 @@ function ProfileMenu() {
 			)}
 
 			<div className={styles.studentDetails}>
-				{/* <h3 className={styles.name}>けんもつさく</h3> */}
-
 				<h4 className={styles.scheduleLabel}>
 					<svg
 						width="14"

@@ -1,5 +1,12 @@
 .profileMenu {
+	display: none;
 	margin-bottom: var(--s-1);
+}
+
+@media (min-width: 768px) {
+	.profileMenu {
+		display: block;
+	}
 }
 
 .defaultView {
@@ -163,4 +170,55 @@
 .logout svg {
 	margin-right: var(--s-3);
 	width: 18px;
+}
+
+/* Student details */
+.studentDetails {
+	background-color: var(--c-surface);
+	border: 1px solid var(--c-border);
+	border-radius: var(--r-sm);
+	font-size: var(--fs-2);
+	margin-top: var(--s-2);
+}
+
+.scheduleLabel {
+	display: flex;
+	align-items: center;
+	font-size: 0.7rem;
+	font-weight: 800;
+	padding: 0 10px 7px 10px;
+	gap: 2px;
+	color: var(--c-muted);
+	border-bottom: 1px solid var(--c-border);
+}
+
+.classesList {
+	list-style: none;
+	margin: 0 0 10px 0;
+	padding: 0 var(--s-2);
+	display: grid;
+	gap: var(--s-1);
+}
+
+.class {
+	position: relative;
+	display: grid;
+	grid-template-columns: 10% 1fr;
+	align-items: center;
+	gap: var(--s-1);
+	font-size: 0.7rem;
+	font-weight: 500;
+	background-color: #f0f2f5;
+	border-radius: 3px;
+}
+
+.day {
+	background-color: var(--c-primary);
+	color: #fff;
+	font-size: 0.6rem;
+	font-weight: 700;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	text-align: center;
+	padding: 2px 0;
 }
